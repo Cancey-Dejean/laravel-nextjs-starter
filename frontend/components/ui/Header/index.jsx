@@ -1,7 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import { useAuth } from "@/hooks/auth";
+import LoginLinks from "@/components/ui/LoginLinks";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
-  return <header>Header</header>;
+  return <header>{/*<LoginLinks />*/} Header</header>;
 }

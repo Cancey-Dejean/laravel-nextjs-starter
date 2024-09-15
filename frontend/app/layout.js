@@ -12,7 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="grid min-h-[100dvh] grid-rows-[auto_1fr_auto]">
+          <Header />
           <main>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>

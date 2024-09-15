@@ -1,10 +1,10 @@
 "use client";
 
-import InputError from "@/components/InputError";
 import Link from "next/link";
-import { useAuth } from "@/hooks/auth";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import InputError from "@/components/InputError";
+import { useAuth } from "@/hooks/auth";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
+
 // import AuthSessionStatus from "@/app/(auth)/AuthSessionStatus";
 
 const Login = () => {
@@ -68,7 +68,6 @@ const Login = () => {
               id="email"
               type="email"
               value={email}
-              // className="mt-1 block w-full"
               onChange={(event) => setEmail(event.target.value)}
               required
               autoFocus
@@ -95,18 +94,6 @@ const Login = () => {
           </div>
 
           {/* Remember Me */}
-          {/*<div className="items-top flex space-x-2">*/}
-          {/*  <Checkbox id="remember_me"  />*/}
-          {/*  <div className="grid gap-1.5 leading-none">*/}
-          {/*    <label*/}
-          {/*      htmlFor="remember_me"*/}
-          {/*      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"*/}
-          {/*    >*/}
-          {/*      Remember me*/}
-          {/*    </label>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
-
           <div className="flex items-center space-x-2">
             <Input
               id="remember_me"

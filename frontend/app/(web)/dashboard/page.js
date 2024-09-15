@@ -1,7 +1,12 @@
+"use client";
+
+import DashboardHeader from "@/components/ui/Header/HeaderDashboard";
+
 export default function Dashboard() {
   return (
     <>
-      <h1>Dashboard</h1>
+      {/*<LoginLinks />*/}
+      <DashboardHeader />
     </>
   );
 }
